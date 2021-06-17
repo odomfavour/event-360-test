@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-holder {
+  height: 100vh;
+  background: #2750a8;
+}
+
+.auth-container {
+  width: 40%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.event-display {
+  margin: 100px 0;
+}
+
+.artist-display {
+  padding: 100px 0;
+  background: #f6f6fa;
+}
+
+@media (max-width: 768px) {
+  .auth-container {
+    width: 90%;
+  }
+}
