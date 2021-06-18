@@ -1,7 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
 }
 
 .main-holder {
@@ -16,17 +21,104 @@
   border-radius: 10px;
 }
 
-.event-display {
-  margin: 100px 0;
+.hero-section {
+  background: linear-gradient(45deg, #00000061, #0000009e),
+    url(../img/hero-bg.png) no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: 100%;
+  color: #fff;
 }
 
-.artist-display {
-  padding: 100px 0;
+.hero-section ul {
+  list-style: none;
+}
+
+.hero-section h1 {
+  padding-top: 200px;
+  font-weight: 900;
+}
+
+.section-header h3 {
+  padding: 50px 0;
+}
+
+.event-display {
+  margin: 100px 0 50px 0;
+}
+
+.event-display img {
+  border-radius: 10px;
+}
+
+.event-display .event-text {
+  color: #012762;
   background: #f6f6fa;
+  padding: 20px;
+}
+
+.pointer {
+  color: #9ea2bb;
+  margin-bottom: 30px;
+}
+
+.about-section {
+  margin: 50px 0 50px 0;
+}
+
+.testimonial-section {
+  margin-top: 50px;
+}
+.artist-display,
+.fun-display,
+.auction-section {
+  margin: 50px 0 50px 0;
+  background: #f6f6fa;
+}
+
+.cuisine-display {
+  margin: 50px 0 50px 0;
+}
+
+.artist-display .artist-name,
+.other-name {
+  background: #fff;
+  color: #012762;
+  padding: 20px;
+}
+
+.testimonial {
+  border: 1px solid #012762;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.auction-info .price {
+  border-right: 2px solid #012762;
+  padding: 5px;
+}
+
+.auction-info .time {
+  padding: 5px;
+}
+
+footer {
+  background: #2750a8;
+  padding: 50px 0;
+  color: #fff;
+}
+
+footer ul {
+  list-style: none;
 }
 
 @media (max-width: 768px) {
   .auth-container {
     width: 90%;
+  }
+
+  .hero-section h1 {
+    padding-top: 50px;
+    font-size: 20px;
   }
 }
