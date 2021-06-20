@@ -117,6 +117,65 @@ footer ul {
   list-style: none;
 }
 
+footer a,
+footer a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* signup */
+
+.auth-holder {
+  min-height: 100vh;
+}
+
+.form-section,
+.image-section {
+  width: 50%;
+}
+
+.form-section {
+  padding: 20px 100px 50px 100px;
+}
+
+.image-section {
+  background: url(../img/side-img.png) no-repeat;
+  background-size: cover;
+  background-position: 100%;
+}
+
+.bottom-question a {
+  text-decoration: none;
+}
+
+.inner-bar {
+  height: 300px;
+  background: #2750a8;
+  color: #fff;
+}
+
+.how-it-works {
+  width: 40%;
+}
+
+.how-it-works .one {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 30px;
+}
+
+.how-it-works .one .num {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: #011636;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
 @media (max-width: 768px) {
   .auth-container {
     width: 90%;
@@ -125,5 +184,21 @@ footer ul {
   .hero-section h1 {
     padding-top: 120px;
     font-size: 40px;
+  }
+
+  /* auth  */
+  .form-section {
+    width: 100%;
+    padding: 50px 100px;
+  }
+
+  .image-section {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .form-section {
+    padding: 50px 40px;
   }
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,64 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Signup</title>
 </head>
+
 <body>
-<script src="js/jquery.js"></script>
+    <div class="auth-holder d-flex">
+        <div class="form-section">
+            <div class="top-header text-center">
+                <a href="/">
+                    <img src="img/logo.png" class="img-fluid" alt="">
+                </a>
+                <h4 class="my-4">Create An Account</h4>
+            </div>
+            <form>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">First Name</label>
+                            <input type="text" class="form-control" id="first" aria-describedby="emailHelp">
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Last Name</label>
+                            <input type="text" class="form-control" id="last" aria-describedby="emailHelp">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email Address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                        else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email Address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                        else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <button class="btn btn-primary">Create Account</button>
+            </form>
+            <div class="my-3 text-center bottom-question">
+                <p>Already have an account? <a href="/login.html">Log In</a></p>
+            </div>
+        </div>
+        <div class="image-section">
+            <!-- <img src="img/side-img.png" class="img-fluid" alt=""> -->
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>
