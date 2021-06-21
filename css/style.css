@@ -176,6 +176,57 @@ footer a:hover {
   margin-right: 10px;
 }
 
+/* profile pic  */
+
+.profile-pic-holder {
+  position: relative;
+}
+
+.profile-pic {
+  height: 200px;
+  width: 200px;
+  background: url(../img/avatar.png) no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
+
+.edit-btn {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: blue;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+.add-card-btn {
+  border-radius: 10px;
+  border: 2px solid #012762;
+  color: #012762;
+}
+
+/* review  */
+
+.no-review-layout {
+  min-height: 80vh;
+}
+
+.person-image img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+}
+
+.review-box {
+  border-bottom: 1px solid #ccc;
+  padding: 15px;
+}
+
 @media (max-width: 768px) {
   .auth-container {
     width: 90%;
