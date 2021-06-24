@@ -149,7 +149,7 @@ footer a:hover {
 }
 
 .inner-bar {
-  height: 300px;
+  min-height: 350px;
   background: #2750a8;
   color: #fff;
 }
@@ -251,5 +251,13 @@ footer a:hover {
 @media (max-width: 500px) {
   .form-section {
     padding: 50px 40px;
+  }
+
+  .how-it-works {
+    width: 100%;
+  }
+
+  .how-it-works .one {
+    margin-right: 5px;
   }
 }
