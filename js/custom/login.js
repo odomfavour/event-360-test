@@ -1,8 +1,9 @@
 let eMail = document.querySelector('#email');
 let pwd = document.querySelector('#password');
 let loginForm = document.querySelector('#login-form');
+let spinner = document.querySelector('.btn-spinner')
 
-
+spinner.style.display = 'none';
 loginForm.addEventListener('submit', loginUser)
 
 function loginUser(e) {
@@ -17,6 +18,7 @@ function loginUser(e) {
         console.log(password.length)
         alert('Password should have at least 8 characters')
     } else {
+        spinner.style.display = 'block';
         const payload = {
             password: password,
             email: email,
@@ -34,7 +36,7 @@ function loginUser(e) {
                 let userToken = data.token;
                 if (userToken) {
                     localStorage.setItem('user_jwt', userToken);
-                    return (window.location.href = 'event-360-webapp/index.html');
+                    return (window.location.href = 'index.html');
                 }
             })
             .catch((error) => {

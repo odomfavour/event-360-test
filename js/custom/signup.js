@@ -7,6 +7,9 @@ let eMail = document.querySelector('#email');
 let signupForm = document.querySelector('#signup-form')
 let signupAlert = document.querySelector('.signup-alert')
 let errorAlert = document.querySelector('#error-display')
+let spinner = document.querySelector('.btn-spinner')
+
+spinner.style.display = 'none';
 
 signupForm.addEventListener('submit', signUpUser)
 
@@ -42,7 +45,7 @@ async function signUpUser(e) {
         console.log(confirmPassword.length)
         alert('Password should have at least 8 characters')
     } else {
-
+        spinner.style.display = 'block';
         // if ()
         const payload = {
             firstName: firstName,
@@ -63,11 +66,12 @@ async function signUpUser(e) {
         }).then(response => response.json())
             .then(data => {
                 console.log('Success:', data);
+                alert('Account created Successfully')
                 console.log(data.token)
                 let userToken = data.token;
                 if (userToken) {
                     localStorage.setItem('user_jwt', userToken);
-                    return (window.location.href = 'event-360-webapp/index.html');
+                    return (window.location.href = 'index.html');
                 }
             })
             .catch((error) => {
