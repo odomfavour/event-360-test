@@ -23,7 +23,7 @@ function bid() {
     const token = localStorage.getItem('user_jwt');
 
     if (!token) {
-        window.location.href = '/login.html';
+        window.location.href = 'login.html';
     } else {
         alert('item was selected')
     }

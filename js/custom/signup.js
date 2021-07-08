@@ -67,7 +67,7 @@ async function signUpUser(e) {
                 let userToken = data.token;
                 if (userToken) {
                     localStorage.setItem('user_jwt', userToken);
-                    return (window.location.href = '/index.html');
+                    return (window.location.href = 'index.html');
                 }
             })
             .catch((error) => {
