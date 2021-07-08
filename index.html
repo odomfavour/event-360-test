@@ -22,22 +22,9 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ml-auto align-items-center">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="profile.html">Profile</a>
-                            <a class="dropdown-item" href="review.html">Reviews</a>
-                            <a class="dropdown-item" href="payment.html">Payments</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Log Out</a>
-                        </div>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">Create an Event</a>
@@ -45,11 +32,26 @@
                     <li class="nav-item">
                         <a href="auction.html" class="nav-link">Auction House</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item notLoggedIn">
                         <a href="signup.html" class="nav-link">Sign Up</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item notLoggedIn">
                         <a href="login.html" class="nav-link">Login</a>
+                    </li>
+                    <li class="nav-item dropdown isLoggedIn">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                                <img src="img/avatar.png" class="img-fluid persona" alt="">
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="profile.html">Profile</a>
+                            <a class="dropdown-item" href="review.html">Reviews</a>
+                            <a class="dropdown-item" href="payment.html">Payments</a>
+                            <a class="dropdown-item" href="how-it-works.html">how it works</a>
+                            <a class="dropdown-item" href="help-center.html">help center</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#" onclick="logout()">Log Out</a>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -159,6 +161,7 @@
                 <div class="row">
                     <div class="col-lg-4 mb-3">
                         <div class="artist-info">
+                            <a href="vendorprofile.html">
                             <div class="text-center">
                                 <img src="img/artists/regaae.png" alt="music" class="img-fluid">
                             </div>
@@ -166,32 +169,38 @@
                             <div class="artist-name d-flex justify-content-between">
                                 <h4>Nathaniel Tetteh.</h4>
                             </div>
+                            </a>
                         </div>
                     </div>
                     <div class="col-lg-4 mb-3">
                         <div class="artist-info">
-                            <div class="text-center">
-                                <img src="img/artists/native.png" alt="music" class="img-fluid">
-                            </div>
-                            <div class="artist-name d-flex justify-content-between">
-                                <h4>Sam Kiefte.</h4>
-                            </div>
+                            <a href="vendorprofile.html">
+                                <div class="text-center">
+                                    <img src="img/artists/native.png" alt="music" class="img-fluid">
+                                </div>
+                                <div class="artist-name d-flex justify-content-between">
+                                    <h4>Sam Kiefte.</h4>
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <div class="col-lg-4 mb-3">
                         <div class="artist-info">
-                            <div class="text-center">
+                            <a href="vendorprofile.html">
+                               <div class="text-center">
                                 <img src="img/artists/pop-star.png" alt="" class="img-fluid">
                             </div>
 
                             <div class="artist-name d-flex justify-content-between">
                                 <h4>Dave Mock.</h4>
-                            </div>
+                            </div> 
+                            </a>
+                            
                         </div>
                     </div>
                 </div>
                 <div class="py-5">
-                    <a href="#" class="pointer">
+                    <a href="artists.html" class="pointer">
                         See all artists
                     </a>
                 </div>
@@ -236,7 +245,7 @@
                     </div>
                 </div>
                 <div class="py-5">
-                    <a href="#" class="pointer">
+                    <a href="vendorlist.html" class="pointer">
                         See all cuisine
                     </a>
                 </div>
@@ -282,9 +291,9 @@
                     </div>
                 </div>
                 <div class="py-5">
-                    <a href="#" class="pointer">
-                        See all artists
-                    </a>
+                <a href="allvendors.html" class="pointer">
+                    See all vendors
+                </a>
                 </div>
             </div>
         </section>
@@ -329,11 +338,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="py-5">
-                    <a href="#" class="pointer">
-                        See all artists
+                <!-- <div class="py-5">
+                    <a href="allvendors.html" class="pointer">
+                        See all vendors
                     </a>
-                </div>
+                </div> -->
             </div>
         </section>
         <section class="auction-section">
@@ -462,6 +471,7 @@
     </main>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom/userAuth.js"></script>
 </body>
 
 </html>

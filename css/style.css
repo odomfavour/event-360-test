@@ -38,6 +38,10 @@ body {
   padding-top: 200px;
   font-weight: 900;
 }
+.v-btn {
+  width: 180px;
+  height: 40px;
+}
 
 .section-header h3 {
   padding: 50px 0;
@@ -105,6 +109,16 @@ body {
 
 .auction-info .time {
   padding: 5px;
+}
+
+.isLoggedIn {
+  display: none;
+}
+
+.persona {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
 }
 
 footer {
@@ -226,6 +240,39 @@ footer a:hover {
   border-bottom: 1px solid #ccc;
   padding: 15px;
 }
+.how-bg {
+  background: url(../img/others/bg-how.png) no-repeat;
+  background-size: cover;
+  min-height: 500px;
+  background-position: center;
+}
+
+.how-info {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.ellipse-left {
+  left: 0;
+  height: 700px;
+  top: 600px;
+  z-index: -10;
+}
+
+.ellipse-right {
+  right: 0;
+  height: 650px;
+  top: 1200px;
+  z-index: -10;
+}
+
+.bottom-part {
+  height: 100px;
+}
+
+.top-circle {
+  right: 0;
+}
 
 @media (max-width: 768px) {
   .auth-container {
@@ -259,5 +306,11 @@ footer a:hover {
 
   .how-it-works .one {
     margin-right: 5px;
+  }
+
+  .ellipse-left,
+  .ellipse-right,
+  .top-circle {
+    display: none;
   }
 }

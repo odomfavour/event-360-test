@@ -13,60 +13,64 @@
 <body>
     <div class="auth-holder d-flex">
         <div class="form-section">
+           
             <div class="top-header text-center">
                 <a href="index.html">
                     <img src="img/logo.png" class="img-fluid" alt="">
                 </a>
                 <h4 class="my-4">Create An Account</h4>
             </div>
-            <form>
+            <form id="signup-form">
                 <div class="row">
                     <div class="col">
                         <div class="form-group">
                             <label for="exampleInputEmail1">First Name</label>
-                            <input type="text" class="form-control" id="first" aria-describedby="emailHelp">
-
+                            <input type="text" class="form-control" id="first-name" aria-describedby="emailHelp">
                         </div>
                     </div>
                     <div class="col">
                         <div class="form-group">
                             <label for="exampleInputEmail1">Last Name</label>
-                            <input type="text" class="form-control" id="last" aria-describedby="emailHelp">
+                            <input type="text" class="form-control" id="last-name" aria-describedby="emailHelp">
                         </div>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Email Address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
                         else.</small>
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Email Address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                        else.</small>
+                    <label for="exampleInputEmail1">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" aria-describedby="emailHelp">
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <input type="password" class="form-control" id="password">
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <label for="exampleInputPassword1">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirm-password">
                 </div>
-                <button class="btn btn-primary">Create Account</button>
+                <button class="btn btn-primary" type="submit">Create Account</button>
             </form>
             <div class="my-3 text-center bottom-question">
                 <p>Already have an account? <a href="login.html">Log In</a></p>
             </div>
         </div>
-        <div class="image-section">
-            <!-- <img src="img/side-img.png" class="img-fluid" alt=""> -->
+        <div class="image-section p-5">
+            <div class="alert alert-warning alert-dismissible fade signup-alert d-none show" role="alert">
+                <p id="error-display"></p>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
         </div>
     </div>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom/signup.js"></script>
 </body>
 
 </html>
